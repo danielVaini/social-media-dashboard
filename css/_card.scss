@@ -1,53 +1,73 @@
+
+
 .card {
   width: 250px;
   height: 250px;
-
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
+  
   background-color: hsl(227, 47%, 96%);
-
-  border-top: 8px solid hsl(208, 92%, 53%);
+  
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   
   .top-card {
     display: flex;
     align-items: center;
-
+    
     img {
       margin-right: 10px;
       height: 25px;
     }
-
+    
   }
   .number-followers {
     display: flex;
     flex-direction: column; 
     
     align-items: center;
-
+    
     p {
       font-size: 60px;
       font-weight: 700;
     }
-
+    
     span {
       color:hsl(228, 12%, 44%);
       font-weight: 400;
       letter-spacing: 5px;
     }
   }
-
+  
   .bottom-card {
     display: flex;
     align-items: center;
     img {
       margin-right: 10px;
     }
-
+    
     label {
       color: hsl(163, 72%, 41%);
     }
   }
+}
+.facebook {
+  border-top: 8px solid hsl(208, 92%, 53%);
+}
+.twitter {
+  
+  border-top: 8px solid hsl(203, 89%, 53%);
+}
+
+.instagram {
+  border-top: 8px solid;
+  border-image-slice: 1;
+  border-width: 8px;
+  
+  border-image-source: linear-gradient(to right,
+  hsl(37, 97%, 70%),
+  hsl(329, 70%, 58%) ) ;
 }
