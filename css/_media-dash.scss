@@ -1,8 +1,8 @@
 .media-dashboard {
+  width: 100%;
+
   display: flex;
   flex-direction: column;
-
-  width: 100%;
 
   margin-top: 40px;
 
@@ -16,10 +16,12 @@
   }
 
   .media-ds-ctrl {
-
     width: 100%;
+
+    margin-top: 50px;
     display: grid;
 
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 45px;
   }
 }
