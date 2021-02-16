@@ -1,5 +1,3 @@
-
-
 .card {
   width: 250px;
   height: 250px;
@@ -55,19 +53,25 @@
   }
 }
 .facebook {
-  border-top: 8px solid hsl(208, 92%, 53%);
+  border-top: 5px solid hsl(208, 92%, 53%);
 }
 .twitter {
   
-  border-top: 8px solid hsl(203, 89%, 53%);
+  border-top: 5px solid hsl(203, 89%, 53%);
 }
 
 .instagram {
-  border-top: 8px solid;
-  border-image-slice: 1;
-  border-width: 8px;
-  
-  border-image-source: linear-gradient(to right,
-  hsl(37, 97%, 70%),
-  hsl(329, 70%, 58%) ) ;
+  width: 100%;
+  height: 5px;
+  border: 2px solid transparent;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-image: linear-gradient(to right,
+   hsl(37, 97%, 70%),
+   hsl(329, 70%, 58%));
+
+   background-origin: border-box;
+   
+   position: relative;
+   top: -14px; 
 }
