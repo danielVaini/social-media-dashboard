@@ -6,11 +6,11 @@ html, body { max-width: 100vw; max-height: 100vh; width: 100%; height: 100%; fon
 
 .layout { width: 80%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.media-dashboard { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-top: 40px; }
+.media-dashboard { width: 100%; max-width: 1300px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 40px; }
 
 .media-dashboard .title-media { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.media-dashboard .media-ds-ctrl { width: 100%; margin-top: 50px; display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr 1fr 1fr; grid-template-columns: 1fr 1fr 1fr 1fr; grid-column-gap: 45px; }
+.media-dashboard .media-ds-ctrl { width: 100%; margin-top: 50px; margin-left: 5%; display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr 1fr 1fr; grid-template-columns: 1fr 1fr 1fr 1fr; grid-column-gap: auto; }
 
 .card { width: 250px; height: 250px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; background-color: #f0f2fa; border-top-left-radius: 5px; border-top-right-radius: 5px; }
 
@@ -28,11 +28,24 @@ html, body { max-width: 100vw; max-height: 100vh; width: 100%; height: 100%; fon
 
 .card .bottom-card img { margin-right: 10px; }
 
-.card .bottom-card label { color: #1db489; }
+.card .bottom-card label { color: #1db489; font-weight: 700; }
 
 .facebook { border-top: 5px solid #198ff5; }
 
 .twitter { border-top: 5px solid #1ca0f2; }
 
-.instagram { width: 100%; height: 5px; border: 2px solid transparent; border-top-left-radius: 5px; border-top-right-radius: 5px; background-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996)); background-image: linear-gradient(to right, #fdc468, #df4996); background-origin: border-box; position: relative; top: -14px; }
+.instagram { width: 100%; height: 5px; border: 2px solid transparent; border-top-left-radius: 5px; border-top-right-radius: 5px; background-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996)); background-image: linear-gradient(to right, #fdc468, #df4996); background-origin: border-box; position: relative; top: -19px; margin-bottom: -40px; }
+
+.youtube { border-top: 5px solid #c4032a; }
+
+.youtube .bottom-card label { color: red; }
+
+@media (max-width: 1300px) { .card { width: 200px; height: 200px; }
+  .instagram { top: -13px; margin-bottom: -30px; } }
+
+@media (max-width: 1010px) { .media-dashboard .media-ds-ctrl { -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; -ms-grid-rows: 1fr 1fr; grid-template-rows: 1fr 1fr; grid-row-gap: 10px; margin-left: 17%; } }
+
+@media (max-width: 1010px) and (max-width: 600px) { .media-dashboard .media-ds-ctrl { margin-left: 5%; } }
+
+@media (max-width: 550px) { .media-dashboard .media-ds-ctrl { margin-left: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; } }
 /*# sourceMappingURL=main.css.map */
