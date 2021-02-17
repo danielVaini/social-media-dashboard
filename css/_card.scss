@@ -1,3 +1,5 @@
+$cardBackgroundLight: hsl(227, 47%, 96%);
+
 .card {
   width: 250px;
   height: 250px;
@@ -7,7 +9,7 @@
   align-items: center;
   justify-content: space-around;
   
-  background-color: hsl(227, 47%, 96%);
+  background-color: $cardBackgroundLight;
   
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;

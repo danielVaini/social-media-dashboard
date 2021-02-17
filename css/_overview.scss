@@ -1,0 +1,15 @@
+.overview {
+  width: 100%;
+
+  margin-top: 30px;
+  margin-left: 1%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  grid-column-gap: auto;
+  grid-row-gap: 5px;
+
+}

@@ -1,0 +1,58 @@
+@import 'colors';
+
+.card-overview {
+  width: 250px;
+  height: 150px;
+ 
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: $BGcardLight;
+
+  border-radius: 5px;
+
+  .top-card {
+    width: 100%;
+    display: flex;
+
+    justify-content: space-evenly;
+
+    label {
+      font-weight: 700;
+      color: $TextLight1;
+    }
+  }
+
+  .bottom-card {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    p {
+      font-size: 35px;
+      font-weight: 700;
+    }
+
+    div {   
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      img {
+        margin-right: 2px;
+      }
+      
+      label {
+        color: $limeGreen;
+        font-weight: 700;
+      }
+
+     }
+  }
+}
