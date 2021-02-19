@@ -1,0 +1,37 @@
+@media (max-width: 1300px) {
+  .card-overview {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .overview {
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .overview {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 550px) {
+  .overview {
+    
+    margin-left: 0;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .card-overview {
+      margin-bottom: 20px;
+    }
+  }
+}
