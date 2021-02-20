@@ -11,20 +11,27 @@
     position: relative;
 
     right: 15px;
+
+    color: $TextLight1;
+    font-weight: 700;
+    position: relative;
+    right: 40px;
   }
 
   .switch {
     position: relative;
     display: inline-block;
     
-    width: 48px;
-    height: 23px;
+    width: 55px;
+    height: 24px;
     
     right: 10px;
+   
     input {
       opacity: 0;
       width: 0;
       height: 0;
+    
       
     }
     
@@ -35,7 +42,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: gray;
+      background-color: $Toggle;
       -webkit-transition: .4s;
       transition: .4s;
     }
@@ -48,13 +55,15 @@
       left: 4px;
       bottom: 4px;
       top: 1px;
-      background-color: blue;
+      background-color: $BGtopLight;
       -webkit-transition: .4s;
       transition: .4s;
+
+    
     }
     
     & input:checked + .slider {
-      background-color: yellow;
+      background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))
     }
     
     & input:focus + .slider {
@@ -62,18 +71,49 @@
     } 
     
     & input:checked + .slider:before {
-      -webkit-transform: translateX(26px);
-      -ms-transform: translateX(26px);
-      transform: translateX(26px);
+      -webkit-transform: translateX(24px);
+      -ms-transform: translateX(24px);
+      transform: translateX(24px);
     }
     
     
     .round {
-      border-radius: 30%;
+      border-radius: 15px;
     }
     .round::before {
       border-radius: 50%;
     }
   }
   
+}
+
+
+@media (max-width: 700px) {
+  .toggle {
+    flex-direction: column;
+    .label-dark {
+      right: 20px;
+    }
+  }
+
+
+}
+
+@media (max-width: 420px) {
+  .toggle {
+
+    width: 100%;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-top: 1.5px solid $BGtopDark;
+
+    margin-top: 40px;
+    padding-top: 10px;
+
+    .label-dark {
+      right: 0;
+    }
+  }
 }

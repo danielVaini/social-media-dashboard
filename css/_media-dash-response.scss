@@ -48,3 +48,25 @@
   }
   
 }
+
+@media (max-width: 420px) {
+  .media-dashboard {
+    .title-media {
+
+      height: 100px;
+      flex-direction: column;
+      
+      justify-content: space-between;
+      margin-bottom: 10px;
+      align-items: flex-start;
+
+      &:first-child {
+    
+        h1 {
+          font-size: 25px;
+        }
+     
+      }
+    }
+  }
+}

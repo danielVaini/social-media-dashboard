@@ -17,6 +17,13 @@
     align-items: center;
 
     justify-content: space-between;
+
+    &:first-child {
+      p {
+        font-weight: 7 00;
+        color: $TextLight1;
+      }
+    }
   }
 
   .media-ds-ctrl {
