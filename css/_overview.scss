@@ -1,6 +1,6 @@
 .overview {
   width: 100%;
-
+  max-width: 1300px;
   margin-top: 30px;
   margin-left: 1%;
 
@@ -11,5 +11,7 @@
 
   grid-column-gap: auto;
   grid-row-gap: 5px;
+
+
 
 }
