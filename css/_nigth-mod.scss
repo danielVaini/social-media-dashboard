@@ -1,3 +1,74 @@
-.container {
+.night {
   background-color: $BGveryDarkBlue;
+
+  .media-dashboard {
+    .title-media{
+      &:first-child {
+        h1 {
+          color: $TextDark2;
+        }
+        p {
+          color: $TextDark1;
+        }
+      }
+
+      .totgle {
+        .label-dark {
+          color: $TextDark1;
+        }
+      }
+    }
+
+    .media-ds-ctrl {
+      .card {
+        background-color: $BGcardDark;
+
+        .top-card {
+          label {
+            color: $TextDark2;
+          }
+        }
+
+        .number-followers {
+          p {
+            color: $TextDark2;
+          }
+        }
+      }
+
+      .card:hover {
+        background-color: $BGdarkHover;
+      }
+
+      
+    }
+
+  }
+
+ .layout-overview {
+   .title-overview {
+     p{
+       color: $TextDark2;
+     }
+   }
+
+   .overview {
+     .card-overview{
+       background-color: $BGcardDark;
+
+       .bottom-card {
+         p {
+           color: $TextDark2;
+         }
+       }
+     }
+
+     .card-overview:hover{
+       background-color: $BGdarkHover;
+     }
+   }
+
+
+ }
+    
 }
