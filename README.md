@@ -1,6 +1,6 @@
 # Frontend Mentor - Social media dashboard with theme switcher
 
-![HOSPEFAGEM](https://determined-pasteur-089110.netlify.app/)
+[HOSPEFAGEM](https://determined-pasteur-089110.netlify.app/)
 
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
